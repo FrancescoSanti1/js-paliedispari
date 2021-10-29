@@ -28,8 +28,11 @@ function parolaPalindroma(parolaInserita, numCaratteri) {
     // dichiaro la variabile flag che mi serve per sapere se la parola è palindroma
     let lettereDiverse = false;
 
-    // scorro tutti i caratteri della parola, fino a metà
-    for (let i = 0; i < (numCaratteri / 2); i++) {
+    // scorro tutti i caratteri della parola, fino a metà (il Math.floor mi permette di evitare che, in caso di parola dispari, l'ultimo giro del ciclo confronti inutilmente la parola centrale con sé stessa)
+    for (let i = 0; i < Math.floor(numCaratteri / 2); i++) {
+
+        console.log("il valore del contatore:", i);
+        console.log("lettere confrontate:", parolaInserita[i], parolaInserita[(numCaratteri - 1) - i]);
 
         // confronto la prima con l'ultima, la seconda con la penultima, e così via
         if (parolaInserita[i] !== parolaInserita[(numCaratteri - 1) - i]) {
