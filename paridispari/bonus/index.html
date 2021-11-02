@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pari e dispari</title>
+</head>
+<body>
+    <div class="contenitore">
+        <div class="contenuto">
+            <div class="blocco-puntata">
+                <label for="pari-dispari">Scegli se puntare pari o dispari:</label>
+                <select name="pari-dispari" id="pari-dispari">
+                    <option value="pari">pari</option>
+                    <option value="dispari">dispari</option>
+                </select>
+            </div>
+
+            <div class="blocco-puntata">
+                <label for="numero">Scegli il numero da giocare:</label>
+                <select name="numero" id="numero">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div id="gioca">
+                Scopri se hai vinto!
+            </div>
+
+            <div id="vincitore"></div>
+
+            <div id="punteggio">
+                <h3>Punteggio complessivo</h3>
+                <p>Punti utente: <span id="punti-utente"></span></p>
+                <p>Punti computer: <span id="punti-computer"></span></p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

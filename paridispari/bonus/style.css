@@ -1,0 +1,18 @@
+.contenitore {
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.blocco-puntata {
+    margin-bottom: 20px;
+}
+
+#gioca {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
